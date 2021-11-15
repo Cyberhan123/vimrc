@@ -20,6 +20,8 @@ Plugin 'tpope/vim-ragtag'
 
 Plugin 'Valloric/MatchTagAlways'
 
+Plug 'yianwillis/vimcdoc'
+
 " 插件安装结束
 call plug#end()
 
@@ -45,7 +47,7 @@ set shortmess+=c
 let g:mta_use_matchparen_group = 1
 
 " 设置开启的文件
-let g:mta_filetypes = {'html' : 1,'xhtml' : 1,'xml' : 1,'jsx' : 1,'tsx':1}
+"let g:mta_filetypes = {'html' : 1,'xhtml' : 1,'xml' : 1,'jsx' : 1,'tsx':1}
 
 " Valloric/MatchTagAlways 设置结束
 
@@ -55,7 +57,6 @@ set history=1000
 
 set showcmd     "显示行
 set showmode    "显示当前模式
-
 set number      "显示行号
 
 "显示行转换格式
@@ -65,5 +66,17 @@ set listchars=tab:??,trail:?,nbsp:?
 set incsearch   "在输入的时候就进行搜索
 set hlsearch    "搜索高亮
 
-"显示匹配的个数
-set shortmess-=S
+"nerdtree 设置开始
+"let g:NERDTreeMouseMode = 2
+"let g:NERDTreeWinSize = 40
+"let g:NERDTreeMinimalUI=1
+"let g:NERDTreeIgnore=['\~$', '__pycache__']
+"nerdtree 设置结束
+
+"设置静默
+let g:rooter_silent_chdir = 1
+set shortmess+=A
+
+"设置backspace
+set backspace=indent,eol,start
+
