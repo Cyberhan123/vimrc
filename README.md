@@ -12,7 +12,7 @@
 
 ```bash
 cd ~/.vim
-git clone https://github.com/Cyberhan123/vim-init
+git clone https://github.com/Cyberhan123/vimrc.git
 ```
 
 然后创建你的 `~/.vimrc` 文件，里面只有一句话：
