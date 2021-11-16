@@ -91,10 +91,10 @@ if index(g:bundle_group, 'basic') >= 0
 	Plug 'xolox/vim-misc'
 
 	" 用于在侧边符号栏显示 marks （ma-mz 记录的位置）
-	Plug 'kshenoy/vim-signature'
+"	Plug 'kshenoy/vim-signature'
 
 	" 用于在侧边符号栏显示 git/svn 的 diff
-	Plug 'mhinz/vim-signify'
+"	Plug 'mhinz/vim-signify'
 
 	" 根据 quickfix 中匹配到的错误信息，高亮对应文件的错误行
 	" 使用 :RemoveErrorMarkers 命令或者 <space>ha 清除错误
@@ -107,7 +107,7 @@ if index(g:bundle_group, 'basic') >= 0
 	Plug 'skywind3000/vim-preview'
 
 	" Git 支持
-	Plug 'tpope/vim-fugitive'
+"	Plug 'tpope/vim-fugitive'
 
 	" 使用 ALT+E 来选择窗口
 	nmap <m-e> <Plug>(choosewin)
@@ -120,17 +120,17 @@ if index(g:bundle_group, 'basic') >= 0
 	noremap <silent><space>ha :RemoveErrorMarkers<cr>
 
 	" signify 调优
-	let g:signify_vcs_list = ['git', 'svn']
-	let g:signify_sign_add               = '+'
-	let g:signify_sign_delete            = '_'
-	let g:signify_sign_delete_first_line = '‾'
-	let g:signify_sign_change            = '~'
-	let g:signify_sign_changedelete      = g:signify_sign_change
+"	let g:signify_vcs_list = ['git', 'svn']
+"	let g:signify_sign_add               = '+'
+"	let g:signify_sign_delete            = '_'
+"	let g:signify_sign_delete_first_line = '‾'
+"	let g:signify_sign_change            = '~'
+"	let g:signify_sign_changedelete      = g:signify_sign_change
 
 	" git 仓库使用 histogram 算法进行 diff
-	let g:signify_vcs_cmds = {
-			\ 'git': 'git diff --no-color --diff-algorithm=histogram --no-ext-diff -U0 -- %f',
-			\}
+"	let g:signify_vcs_cmds = {
+"			\ 'git': 'git diff --no-color --diff-algorithm=histogram --no-ext-diff -U0 -- %f',
+"			\}
 endif
 
 
@@ -161,8 +161,8 @@ if index(g:bundle_group, 'enhanced') >= 0
 	" Plug 'lambdalisue/vim-gista', { 'on': 'Gista' }
 
 	" ALT_+/- 用于按分隔符扩大缩小 v 选区
-	map <m-=> <Plug>(expand_region_expand)
-	map <m--> <Plug>(expand_region_shrink)
+	"map <m-=> <Plug>(expand_region_expand)
+	"map <m--> <Plug>(expand_region_shrink)
 endif
 
 
@@ -273,23 +273,23 @@ endif
 "----------------------------------------------------------------------
 " airline
 "----------------------------------------------------------------------
-if index(g:bundle_group, 'airline') >= 0
-	Plug 'vim-airline/vim-airline'
-	Plug 'vim-airline/vim-airline-themes'
-	let g:airline_left_sep = ''
-	let g:airline_left_alt_sep = ''
-	let g:airline_right_sep = ''
-	let g:airline_right_alt_sep = ''
-	let g:airline_powerline_fonts = 0
-	let g:airline_exclude_preview = 1
-	let g:airline_section_b = '%n'
-	let g:airline_theme='deus'
-	let g:airline#extensions#branch#enabled = 0
-	let g:airline#extensions#syntastic#enabled = 0
-	let g:airline#extensions#fugitiveline#enabled = 0
-	let g:airline#extensions#csv#enabled = 0
-	let g:airline#extensions#vimagit#enabled = 0
-endif
+"if index(g:bundle_group, 'airline') >= 0
+"	Plug 'vim-airline/vim-airline'
+"	Plug 'vim-airline/vim-airline-themes'
+"	let g:airline_left_sep = ''
+"	let g:airline_left_alt_sep = ''
+"	let g:airline_right_sep = ''
+"	let g:airline_right_alt_sep = ''
+"	let g:airline_powerline_fonts = 0
+"	let g:airline_exclude_preview = 1
+"	let g:airline_section_b = '%n'
+"	let g:airline_theme='deus'
+"	let g:airline#extensions#branch#enabled = 0
+"	let g:airline#extensions#syntastic#enabled = 0
+"	let g:airline#extensions#fugitiveline#enabled = 0
+"	let g:airline#extensions#csv#enabled = 0
+"	let g:airline#extensions#vimagit#enabled = 0
+"endif
 
 
 "----------------------------------------------------------------------

@@ -31,7 +31,7 @@ source ~/.vim/vim-init/vimrc.vim
 
 本配置按顺序，由如下几个主要模块组成：
 
-- `init.vim`: 配置入口，设置 runtimepath 检测脚本路径，加载其他脚本。
+- `vimrc.vim`: 配置入口，设置 runtimepath 检测脚本路径，加载其他脚本。
 - `init-basic.vim`: 所有人都能同意的基础配置，去除任何按键和样式定义，保证能用于 `tiny` 模式（没有 `+eval`）。
 - `init-config.vim`: 支持 +eval 的非 tiny 配置，初始化 ALT 键支持，功能键键盘码，备份，终端兼容等
 - `init-tabsize.vim`: 制表符宽度，是否展开空格等，因为个人差异太大，单独一个文件好更改。
