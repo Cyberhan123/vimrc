@@ -18,7 +18,7 @@ git clone https://github.com/Cyberhan123/vimrc.git
 然后创建你的 `~/.vimrc` 文件，里面只有一句话：
 
 ```VimL
-source ~/.vim/vim-init/vimrc.vim
+source ~/.vim/vimrc/vimrc.vim
 ```
 
 请调整你的魔杖，确保对 ALT 键的支持，以及 Backspace 键发送正确扫描码：
